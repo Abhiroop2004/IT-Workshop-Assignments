@@ -13,7 +13,21 @@ xlabel('t->');
 ylabel('Functions->');
 legend('Displacement','Velocity','Acceleration');
 hold off;
-V=
+V=[zeros(1,1),V];
+A=[zeros(1,2),A];
+subplot (3,1,1);
+plot(t,X);
+xlabel('time');
+ylabel('displacement');
+subplot (3,1,2);
+plot(t,V);
+xlabel('time');
+ylabel('velocity');
+subplot (3,1,3);
+plot(3,1,3);
+plot(t,A);
+plot('time');
+plot('acceleration');
 
 %Question 2
 x=(-2*pi:0.1:2*pi);
