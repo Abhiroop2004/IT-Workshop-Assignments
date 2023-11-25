@@ -13,7 +13,7 @@ xlabel('t->');
 ylabel('Functions->');
 legend('Displacement','Velocity','Acceleration');
 hold off;
-
+V=
 
 %Question 2
 x=(-2*pi:0.1:2*pi);
@@ -28,4 +28,5 @@ end
 legend('1 term','2 terms','5 terms');
 xlabel('x');
 ylabel('Sin x');
-title;
+title('Taylor Series');
+hold off;
