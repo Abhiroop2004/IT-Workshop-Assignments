@@ -24,22 +24,21 @@ title('Sorted vs Un-sorted');
 %Question 3
 X=(1:5);
 Y=[125,130,95,120,180];
+subplot(3,2,1);
 bar(X,Y,'b');
 title('Bar Chart');
-subplot(3,2,1);
+subplot(3,2,2);
 stem(X,Y,'g');
 title('Stem Chart');
-subplot(3,2,2);
+subplot(3,2,3);
 stairs(X,Y,'r');
 title('Staircase Chart');
-subplot(3,2,3);
+subplot(3,2,4);
 pie(Y);
 title('Pie Plot');
-subplot(3,2,4);
 for i=1:5
     Y(i)=1-Y(i)/sum(Y);
 end
+subplot(3,2,5);
 plot(X,Y,'-ko');
 title('Probability of drought');
-subplot(3,2,5);
-sgtitle('5 year average Rainfall Plotting');
